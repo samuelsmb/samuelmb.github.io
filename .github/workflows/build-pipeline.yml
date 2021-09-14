@@ -16,6 +16,10 @@ jobs:
           FIRST_NAME: Mona
           MIDDLE_NAME: The
           LAST_NAME: Octocat
+  docker_job:
+    steps:
+      - uses: docker/login-action@v1
+      - uses: docker/metadata-action@v3
 
   build:
     runs-on: ubuntu-latest
