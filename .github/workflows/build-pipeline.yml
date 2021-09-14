@@ -23,12 +23,6 @@ jobs:
       - name: Run styles lint and format check
         run: npm run lint:css
 
-  add-beans:
-  grind-beans:
-    needs: add-beans
-  brew-coffee:
-    needs: [add-beans, grind-beans]
-
 
   deploy:
     needs: build
