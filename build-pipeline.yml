@@ -13,9 +13,9 @@ jobs:
       - name: "Hello world when it's Monday"
         run: echo "Hello $FIRST_NAME $MIDDLE_NAME $LAST_NAME, today is Monday!"
         env:
-          FIRST_NAME: Samuel
+          FIRST_NAME: Mona
           MIDDLE_NAME: The
-          LAST_NAME: Man
+          LAST_NAME: Octocat
 
   build:
     runs-on: ubuntu-latest
